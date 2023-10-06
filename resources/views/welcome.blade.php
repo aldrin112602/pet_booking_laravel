@@ -24,7 +24,8 @@
             box-sizing: border-box;
             border-width: 0;
             border-style: solid;
-            border-color: #e5e7eb
+            border-color: #e5e7eb;
+            transition: all 0.3s;
         }
 
         ::after,
@@ -38,7 +39,8 @@
             -moz-tab-size: 4;
             tab-size: 4;
             font-family: Figtree, sans-serif;
-            font-feature-settings: normal
+            font-feature-settings: normal;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -994,13 +996,13 @@
                         <div class="flex space-x-4">
                             <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                                 aria-current="page">Home</a>
-                            <a href="#"
+                            <a href="#services"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Our
                                 Services</a>
-                            <a href="#"
+                            <a href="#about"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About
                                 Us</a>
-                            <a href="#"
+                            <a href="#contact"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact
                                 Us</a>
                         </div>
@@ -1110,15 +1112,13 @@
         <br> <br>
     </div>
     <div>
-
         <div class="slideshow-container">
-
-            <div class="mySlides fade">
+            <div class="mySlides fade" id="services">
                 <div class="numbertext">1 / 3</div>
                 <img src="img/check-up.jpg" style="width:100%" class="w-full">
                 <div class="text">
                     <h1 class="text-5xl font-bold text-block">PET CHECK-UP</h1>
-                    <h2 class="text-3xl text-block">Assess your pet's general health.</h2>
+                    <h2 class="text-3xl text-block font-bold">Assess your pet's general health.</h2>
                 </div>
             </div>
 
@@ -1127,23 +1127,21 @@
                 <img src="img/vaccine.jpg" style="width:100%" class="w-full">
                 <div class="text">
                     <h1 class="text-5xl font-bold text-block">PET VACCINATION</h1>
-                    <h2 class="text-3xl text-block">Protect your pets against devastating and life-threatening
+                    <h2 class="text-3xl text-block font-bold">Protect your pets against devastating and
+                        life-threatening
                         diseases.</h2>
                 </div>
             </div>
-
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="img/grooming.jpg" style="width:100%" class="w-full">
                 <div class="text">
                     <h1 class="text-5xl font-bold text-block">PET GROOMING</h1>
-                    <h2 class="text-3xl text-block">Ensure your pet's comfort.</h2>
+                    <h2 class="text-3xl text-block font-bold">Ensure your pet's comfort.</h2>
                 </div>
             </div>
-
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
-
         </div>
 
         <div style="text-align:center" class="bg-slate-900 p-5">
@@ -1151,10 +1149,7 @@
             <span class="dot" onclick="currentSlide(2)"></span>&nbsp;
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
     </div>
-
-
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
