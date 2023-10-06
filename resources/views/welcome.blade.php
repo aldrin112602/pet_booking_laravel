@@ -990,9 +990,9 @@
                 </div>
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex flex-shrink-0 items-center">
-                        <img src="img/logo-removebg-preview.png" alt="" width="70px">
+                        <img src="img/logo-removebg-preview.png" alt="" width="50px" style="background: white; border-radius: 50%;">
                     </div>
-                    <div id="sidebar" class="hidden sm:ml-6 sm:block mt-4">
+                    <div id="sidebar" class="hidden sm:ml-6 sm:block mt-2">
                         <div class="flex space-x-4">
                             <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                                 aria-current="page">Home</a>

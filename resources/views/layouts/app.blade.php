@@ -25,7 +25,8 @@
             box-sizing: border-box;
             border-width: 0;
             border-style: solid;
-            border-color: #e5e7eb
+            border-color: #e5e7eb;
+            transition: all 0.3s;
         }
 
         ::after,
@@ -39,7 +40,8 @@
             -moz-tab-size: 4;
             tab-size: 4;
             font-family: Figtree, sans-serif;
-            font-feature-settings: normal
+            font-feature-settings: normal;
+            scroll-behavior: smooth;
         }
 
         body {
