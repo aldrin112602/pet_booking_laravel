@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+
     <!-- Styles -->
     <style>
         /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */
@@ -803,7 +807,7 @@
                 justify-content: space-between
             }
 
-            .sm\:text-left {
+            .sm\:text-white {
                 text-align: left
             }
 
@@ -917,7 +921,7 @@
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class="hidden" id="menu_mobile">
             <div class="space-y-1 px-2 pb-3 pt-2">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
                 <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
                     aria-current="page">Home</a>
                 <a href="#"
@@ -933,9 +937,70 @@
         </div>
     </nav>
 
-    {{-- <div class="grid gap-4 grid-cols-3 grid-rows-3">
-       
-    </div> --}}
+    <div class="min-h-fit" style="background: rgba(255, 171, 3, 0.967)">
+        <br>
+        <div class="container mx-auto p-3 py-10">
+            <div class="text-center">
+                <h1 class="text-black font-bold leading-tight text-3xl md:text-4xl lg:text-5xl">PAWS</h1>
+                <h1 class="text-white font-bold leading-tight text-3xl md:text-4xl lg:text-5xl">VETERINARY CLINIC</h1>
+                <h5 class="text-black leading-tight text-lg md:text-xl lg:text-2xl">We take care of your pets</h5>
+            </div>
+        </div>
+        <br><br>
+        <div class="container mx-auto p-5">
+            <div class="flex gap-8 align-center justify-center">
+                <div class="md:w-1/4">
+                    <div class="md:pt-5 md:mt-5">
+                        <p class="font-bold text-dark flex align-center justify-center gap-5 text-xl my-5">
+                            <i
+                                class="bi bi-heart-pulse font-bold p-4 px-5 rounded-full bg-orange-950 text-white ml-3"></i>
+                            <span class="mt-4">Examination</span>
+
+                        </p>
+                        <p class="font-bold text-dark flex align-center justify-center gap-5 text-xl my-5">
+                            <i
+                                class="bi-scissors text-sm md:text-base font-bold p-4 px-5 rounded-full bg-orange-950 text-white"></i>
+                            <span class="mt-4">Groomings</span>
+
+                        </p>
+                        <p class="font-bold text-dark flex align-center justify-center gap-5 text-xl my-5">
+                            <i
+                                class="bi-shop text-sm md:text-base font-bold p-4 px-5 rounded-full bg-orange-950 text-white"></i>
+                            <span class="mt-4">Accessories</span>
+
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="img/homepicture-removebg-preview.png" style="height: 300px;" alt="Dog Picture"
+                        class="w-full mx-auto hidden md:block">
+                </div>
+                <div class="md:w-1/4">
+                    <div class="md:pt-5 md:mt-5">
+                        <p class="font-bold text-dark flex align-center justify-center gap-5 text-xl my-5">
+                            <i
+                                class="bi-activity text-sm md:text-base font-bold p-4 px-5 rounded-full bg-orange-950 text-white"></i>
+                            <span class="mt-4">Admissions</span>
+                        </p>
+                        <p class="font-bold text-dark flex align-center justify-center gap-5 text-xl my-5">
+                            <i
+                                class="bi-eyedropper text-sm md:text-base font-bold p-4 px-5 rounded-full bg-orange-950 text-white"></i>
+                            <span class="mt-4">Vaccination</span>
+
+                        </p>
+                        <p class="font-bold text-dark flex align-center justify-center gap-5 text-xl my-5">
+                            <i
+                                class="bi-thermometer-high text-sm md:text-base font-bold p-4 px-5 rounded-full bg-orange-950 text-white"></i>
+                            <span class="mt-4">Diagnostics</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> <br>
+    </div>
+
+
 
 
 </body>
