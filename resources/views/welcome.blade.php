@@ -1197,7 +1197,7 @@
         </div>
     </div>
 
-    <section class="bg-info">
+    <div class="bg-late-100" id="about">
         <div class="container mx-auto p-5">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div class="py-6">
@@ -1260,7 +1260,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
 

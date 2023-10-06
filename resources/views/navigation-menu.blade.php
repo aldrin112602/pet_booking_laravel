@@ -178,11 +178,11 @@
                     <x-nav-link href="#services">
                         {{ __('Our Services') }}
                     </x-nav-link>
-                    <x-nav-link href="#contact">
-                        {{ __('Contact Us') }}
-                    </x-nav-link>
                     <x-nav-link href="#about">
                         {{ __('About Us') }}
+                    </x-nav-link>
+                    <x-nav-link href="#contact">
+                        {{ __('Contact Us') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -325,11 +325,11 @@
             <x-responsive-nav-link href="#services">
                 {{ __('Our Services') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="#contact">
-                {{ __('Contact Us') }}
-            </x-responsive-nav-link>
             <x-responsive-nav-link href="#about">
                 {{ __('About Us') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="#contact">
+                {{ __('Contact Us') }}
             </x-responsive-nav-link>
         </div>
 
