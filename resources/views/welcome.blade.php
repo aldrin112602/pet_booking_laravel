@@ -990,7 +990,8 @@
                 </div>
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex flex-shrink-0 items-center">
-                        <img src="img/logo-removebg-preview.png" alt="" width="50px" style="background: white; border-radius: 50%;">
+                        <img src="img/logo-removebg-preview.png" alt="" width="50px"
+                            style="background: white; border-radius: 50%;">
                     </div>
                     <div id="sidebar" class="hidden sm:ml-6 sm:block mt-2">
                         <div class="flex space-x-4">
@@ -1163,20 +1164,29 @@
         }
 
         setInterval(() => {
-            currentSlide(slideIndex % 3 + 1);
+            slideIndex++;
+            if (slideIndex > 3) slideIndex = 1;
+            currentSlide(slideIndex)
         }, 5000);
 
         function showSlides(n) {
-            const slides = document.querySelectorAll(".mySlides");
-            const dots = document.querySelectorAll(".dot");
-
-            slideIndex = (n > slides.length) ? 1 : (n < 1) ? slides.length : n;
-
-            slides.forEach(slide => slide.style.display = "none");
-            dots.forEach(dot => dot.classList.remove("active"));
-
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
             slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].classList.add("active");
+            dots[slideIndex - 1].className += " active";
         }
     </script>
 </body>
