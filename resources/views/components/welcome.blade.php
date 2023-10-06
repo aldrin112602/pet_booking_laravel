@@ -1,4 +1,4 @@
-<div class="min-h-fit" style="background: rgba(255, 171, 3, 0.967)">
+<div class="min-h-fit bg-orange-300">
     <br>
     <div class="container mx-auto p-3 py-10">
         <div class="text-center">
