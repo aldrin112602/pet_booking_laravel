@@ -1267,7 +1267,7 @@
         </div>
     </div>
 
-    <div class="block md:flex p-5">
+    <div class="block md:flex p-5" id="contact">
         <div class="w-1/2 text-center">
             <div class="">
                 <iframe

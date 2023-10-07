@@ -184,8 +184,12 @@
                     <x-nav-link href="#contact">
                         {{ __('Contact Us') }}
                     </x-nav-link>
+                    <x-nav-link href="#">
+                        {{ __('My Booking') }}
+                    </x-nav-link>
                 </div>
             </div>
+
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 <!-- Teams Dropdown -->
@@ -330,6 +334,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link href="#contact">
                 {{ __('Contact Us') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="#">
+                {{ __('My Booking') }}
             </x-responsive-nav-link>
         </div>
 

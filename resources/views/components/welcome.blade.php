@@ -209,6 +209,97 @@
             </div>
         </div>
     </div>
+
+    <div class="block md:flex p-5" id="contact">
+        <div class="w-1/2 text-center">
+            <div class="">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3926.0917631351767!2d123.9476225!3d10.2541828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99a5f7cef1a3b%3A0xfd3a2322530178bb!2sPoblacion%20Rd%2C%20Cordova%2C%20Cebu!5e0!3m2!1sen!2sph!4v1668438531620!5m2!1sen!2sph"
+                    class="w-full h-full" style="border:0; height: 400px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="w-1/2 text-center pt-5 mt-3 md:hidden">
+            <br><br>
+            <p><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
+            <p><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
+            <p><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
+            <p class="mb-2">Pet Veterinary Clinic</p>
+            <p class="mb-2">11901 Poblacion St.</p>
+            <p>Cordova, Cebu 6017</p>
+            <h4 class="mt-5 text-2xl"><i>"Your number 1 Trusted Vet Clinic in Cebu"</i></h4>
+        </div>
+        <div class="hidden w-1/2 text-center pt-5 mt-3 md:block">
+            <br><br>
+            <p><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
+            <p><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
+            <p><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
+            <p class="mb-2">Pet Veterinary Clinic</p>
+            <p class="mb-2">11901 Poblacion St.</p>
+            <p>Cordova, Cebu 6017</p>
+            <h4 class="mt-5 text-2xl"><i>"Your number 1 Trusted Vet Clinic in Cebu"</i></h4>
+        </div>
+    </div>
+
+
+    <div class="bg-orange-300 py-5">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center leading-10">
+                    <h4 class="py-2 font-bold text-xl">Office Hours</h4>
+                    <p>Monday 8:00-6:00pm</p>
+                    <p>Tuesday 8:00-7:00pm</p>
+                    <p>Wednesday 8:00-7:00pm</p>
+                    <p>Thursday 8:00-7:00pm</p>
+                    <p>Friday 8:00-6:00pm</p>
+                    <p>Saturday 8:00-4:00pm</p>
+                    <p>Sunday Closed</p>
+                </div>
+                <div class="text-center leading-10">
+                    <h4 class="py-2 font-bold text-xl">Branches</h4>
+                    <p>Daanbantayan</p>
+                    <p>San Fernando</p>
+                    <p>Quezon City</p>
+                    <p>Minglanilla</p>
+                    <p>Dumaguete</p>
+                    <p>Dawis, Bohol</p>
+                    <p>Liloan</p>
+                </div>
+                <div class="text-center leading-10">
+                    <h4 class="py-2 font-bold text-xl">Contact Us Through</h4>
+                    <p><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
+                    <p><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
+                    <p><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
+                    <p class="mb-2">Pet Veterinary Clinic</p>
+                    <p class="mb-2">11901 Poblacion St.</p>
+                    <p>Cordova, Cebu 6017</p>
+                    <div class="flex justify-center mt-3">
+                        <a href="https://www.instagram.com/pvcbooking/"><button
+                                class="btn btn-sm btn-dark rounded-full mx-2"><i
+                                    class="bi-instagram"></i></button></a>
+                        <a href="https://twitter.com/pvcbooking"><button
+                                class="btn btn-sm btn-dark rounded-full mx-2"><i class="bi-twitter"></i></button></a>
+                        <a href="https://www.facebook.com/profile.php?id=100087907143800"><button
+                                class="btn btn-sm btn-dark rounded-full mx-2"><i class="bi-facebook"></i></button></a>
+                        <a href="https://www.youtube.com/channel/UC88K46OhEMh0y1f5XOTg1GQ"><button
+                                class="btn btn-sm btn-dark rounded-full mx-2"><i class="bi-youtube"></i></button></a>
+                    </div>
+                </div>
+                <div class="text-center leading-10">
+                    <h4 class="py-2 font-bold text-xl">Quick Links</h4>
+                    <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
+                        href="#header">Home</a>
+                    <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
+                        href="#content">Our Services</a>
+                    <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
+                        href="#review">About Us</a>
+                    <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
+                        href="#footer">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <script>
     let slideIndex = 1;
     showSlides(slideIndex);
