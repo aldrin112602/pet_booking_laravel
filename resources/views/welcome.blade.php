@@ -1032,7 +1032,7 @@
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="hidden" id="menu_mobile">
+        <div class="hidden md:hidden" id="menu_mobile">
             <div class="space-y-1 px-2 pb-3 pt-2">
 
                 <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
@@ -1053,7 +1053,7 @@
     <div class="min-h-fit bg-orange-300">
         <br>
         <div class="container mx-auto p-3 py-10">
-            <div class="text-center">
+            <div class="text-center leading-10">
                 <h1 class="text-black font-bold leading-tight text-3xl md:text-4xl lg:text-5xl">PAWS</h1>
                 <h1 class="text-white font-bold leading-tight text-3xl md:text-4xl lg:text-5xl">VETERINARY CLINIC</h1>
                 <h5 class="text-black leading-tight text-lg md:text-xl lg:text-2xl">We take care of your pets</h5>
@@ -1154,7 +1154,7 @@
 
     <div class="bg-orange-300 min-h-screen" id="services">
         <div class="container mx-auto py-5 pt-10">
-            <div class="text-center">
+            <div class="text-center leading-10">
                 <h3 class="text-2xl font-bold text-orange-900">Our Services</h3>
             </div>
         </div>
@@ -1204,7 +1204,7 @@
                     <div class="py-5">
                         <div class="container mx-auto">
                             <div class="bg-late-200 p-5 rounded-lg shadow-lg">
-                                <div class="text-center">
+                                <div class="text-center leading-10">
                                     <blockquote class="text-lg italic text-gray-600">
                                         <p class="mb-4">My dogs love it, nice staff, great place and excellent vet.
                                         </p>
@@ -1226,8 +1226,8 @@
 
                 </div>
                 <div class="md:block text-center">
-                    <iframe width="560" height="315" class="rounded-xl" src="https://www.youtube.com/embed/WvePaY9UW3U"
-                        title="YouTube video player" frameborder="0"
+                    <iframe width="560" height="315" class="rounded-xl"
+                        src="https://www.youtube.com/embed/WvePaY9UW3U" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen=""></iframe>
                 </div>
@@ -1251,16 +1251,114 @@
                         <p class="mb-5">Allow customers to schedule appointments anywhere, anytime. With automated
                             reminder messages, you can minimize phone volume for receptionists and reduce no-shows. Your
                             customers will also receive their queue via mobile apps.</p>
-                        <a href="registration.php">
-                            <button type="button" class="bg-dark text-white rounded-pill px-5 py-2 text-lg">
-                                <h5>Create Account</h5>
-                            </button>
-                        </a>
+
+                        <div class="flex justify-center items-center">
+                            <a href="registration.php">
+                                <button type="button"
+                                    class="bg-black mx-auto text-white rounded-lg px-5 py-2 text-lg">
+                                    <h5>Create Account</h5>
+                                </button>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="block md:flex p-5">
+        <div class="w-1/2 text-center">
+            <div class="">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3926.0917631351767!2d123.9476225!3d10.2541828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99a5f7cef1a3b%3A0xfd3a2322530178bb!2sPoblacion%20Rd%2C%20Cordova%2C%20Cebu!5e0!3m2!1sen!2sph!4v1668438531620!5m2!1sen!2sph"
+                    class="w-full h-full" style="border:0; height: 400px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="w-1/2 text-center pt-5 mt-3 md:hidden">
+            <br><br>
+            <p><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
+            <p><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
+            <p><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
+            <p class="mb-2">Pet Veterinary Clinic</p>
+            <p class="mb-2">11901 Poblacion St.</p>
+            <p>Cordova, Cebu 6017</p>
+            <h4 class="mt-5 text-2xl"><i>"Your number 1 Trusted Vet Clinic in Cebu"</i></h4>
+        </div>
+        <div class="hidden w-1/2 text-center pt-5 mt-3 md:block">
+            <br><br>
+            <p><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
+            <p><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
+            <p><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
+            <p class="mb-2">Pet Veterinary Clinic</p>
+            <p class="mb-2">11901 Poblacion St.</p>
+            <p>Cordova, Cebu 6017</p>
+            <h4 class="mt-5 text-2xl"><i>"Your number 1 Trusted Vet Clinic in Cebu"</i></h4>
+        </div>
+    </div>
+
+
+    <div class="bg-orange-300 py-5">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center leading-10">
+                    <h4 class="py-2 font-bold text-xl">Office Hours</h4>
+                    <p>Monday 8:00-6:00pm</p>
+                    <p>Tuesday 8:00-7:00pm</p>
+                    <p>Wednesday 8:00-7:00pm</p>
+                    <p>Thursday 8:00-7:00pm</p>
+                    <p>Friday 8:00-6:00pm</p>
+                    <p>Saturday 8:00-4:00pm</p>
+                    <p>Sunday Closed</p>
+                </div>
+                <div class="text-center leading-10">
+                    <h4 class="py-2 font-bold text-xl">Branches</h4>
+                    <p>Daanbantayan</p>
+                    <p>San Fernando</p>
+                    <p>Quezon City</p>
+                    <p>Minglanilla</p>
+                    <p>Dumaguete</p>
+                    <p>Dawis, Bohol</p>
+                    <p>Liloan</p>
+                </div>
+                <div class="text-center leading-10">
+                    <h4 class="py-2 font-bold text-xl">Contact Us Through</h4>
+                    <p><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
+                    <p><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
+                    <p><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
+                    <p class="mb-2">Pet Veterinary Clinic</p>
+                    <p class="mb-2">11901 Poblacion St.</p>
+                    <p>Cordova, Cebu 6017</p>
+                    <div class="flex justify-center mt-3">
+                        <a href="https://www.instagram.com/pvcbooking/"><button
+                                class="btn btn-sm btn-dark rounded-full mx-2"><i
+                                    class="bi-instagram"></i></button></a>
+                        <a href="https://twitter.com/pvcbooking"><button
+                                class="btn btn-sm btn-dark rounded-full mx-2"><i class="bi-twitter"></i></button></a>
+                        <a href="https://www.facebook.com/profile.php?id=100087907143800"><button
+                                class="btn btn-sm btn-dark rounded-full mx-2"><i class="bi-facebook"></i></button></a>
+                        <a href="https://www.youtube.com/channel/UC88K46OhEMh0y1f5XOTg1GQ"><button
+                                class="btn btn-sm btn-dark rounded-full mx-2"><i class="bi-youtube"></i></button></a>
+                    </div>
+                </div>
+                <div class="text-center leading-10">
+                    <h4 class="py-2 font-bold text-xl">Quick Links</h4>
+                    <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
+                        href="#header">Home</a>
+                    <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
+                        href="#content">Our Services</a>
+                    <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
+                        href="#review">About Us</a>
+                    <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
+                        href="#footer">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
 
