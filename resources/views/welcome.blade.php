@@ -995,7 +995,7 @@
                     </div>
                     <div id="sidebar" class="hidden sm:ml-6 sm:block mt-2">
                         <div class="flex space-x-4">
-                            <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                            <a href="#home" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                                 aria-current="page">Home</a>
                             <a href="#services"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Our
@@ -1035,22 +1035,22 @@
         <div class="hidden md:hidden" id="menu_mobile">
             <div class="space-y-1 px-2 pb-3 pt-2">
 
-                <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+                <a href="#home" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
                     aria-current="page">Home</a>
-                <a href="#"
+                <a href="#services"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Our
                     Services</a>
-                <a href="#"
+                <a href="#about"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About
                     Us</a>
-                <a href="#"
+                <a href="#contact"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact
                     Us</a>
             </div>
         </div>
     </nav>
 
-    <div class="min-h-fit bg-orange-300">
+    <div class="min-h-fit bg-orange-300" id="home">
         <br>
         <div class="container mx-auto p-3 py-10">
             <div class="text-center leading-10">
@@ -1278,22 +1278,22 @@
         </div>
         <div class="w-1/2 text-center pt-5 mt-3 md:hidden">
             <br><br>
-            <p><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
-            <p><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
-            <p><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
-            <p class="mb-2">Pet Veterinary Clinic</p>
-            <p class="mb-2">11901 Poblacion St.</p>
-            <p>Cordova, Cebu 6017</p>
+            <p class="font-bold"><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
+            <p class="font-bold"><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
+            <p class="font-bold"><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
+            <p class="font-bold">Pet Veterinary Clinic</p>
+            <p class="font-bold">11901 Poblacion St.</p>
+            <p class="font-bold">Cordova, Cebu 6017</p>
             <h4 class="mt-5 text-2xl"><i>"Your number 1 Trusted Vet Clinic in Cebu"</i></h4>
         </div>
         <div class="hidden w-1/2 text-center pt-5 mt-3 md:block">
             <br><br>
-            <p><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
-            <p><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
-            <p><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
-            <p class="mb-2">Pet Veterinary Clinic</p>
-            <p class="mb-2">11901 Poblacion St.</p>
-            <p>Cordova, Cebu 6017</p>
+            <p class="font-bold"><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
+            <p class="font-bold"><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
+            <p class="font-bold"><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
+            <p class="font-bold">Pet Veterinary Clinic</p>
+            <p class="font-bold">11901 Poblacion St.</p>
+            <p class="font-bold">Cordova, Cebu 6017</p>
             <h4 class="mt-5 text-2xl"><i>"Your number 1 Trusted Vet Clinic in Cebu"</i></h4>
         </div>
     </div>
@@ -1304,32 +1304,32 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="text-center leading-10">
                     <h4 class="py-2 font-bold text-xl">Office Hours</h4>
-                    <p>Monday 8:00-6:00pm</p>
-                    <p>Tuesday 8:00-7:00pm</p>
-                    <p>Wednesday 8:00-7:00pm</p>
-                    <p>Thursday 8:00-7:00pm</p>
-                    <p>Friday 8:00-6:00pm</p>
-                    <p>Saturday 8:00-4:00pm</p>
-                    <p>Sunday Closed</p>
+                    <p class="font-bold">Monday 8:00-6:00pm</p>
+                    <p class="font-bold">Tuesday 8:00-7:00pm</p>
+                    <p class="font-bold">Wednesday 8:00-7:00pm</p>
+                    <p class="font-bold">Thursday 8:00-7:00pm</p>
+                    <p class="font-bold">Friday 8:00-6:00pm</p>
+                    <p class="font-bold">Saturday 8:00-4:00pm</p>
+                    <p class="font-bold">Sunday Closed</p>
                 </div>
                 <div class="text-center leading-10">
                     <h4 class="py-2 font-bold text-xl">Branches</h4>
-                    <p>Daanbantayan</p>
-                    <p>San Fernando</p>
-                    <p>Quezon City</p>
-                    <p>Minglanilla</p>
-                    <p>Dumaguete</p>
-                    <p>Dawis, Bohol</p>
-                    <p>Liloan</p>
+                    <p class="font-bold">Daanbantayan</p>
+                    <p class="font-bold">San Fernando</p>
+                    <p class="font-bold">Quezon City</p>
+                    <p class="font-bold">Minglanilla</p>
+                    <p class="font-bold">Dumaguete</p>
+                    <p class="font-bold">Dawis, Bohol</p>
+                    <p class="font-bold">Liloan</p>
                 </div>
                 <div class="text-center leading-10">
                     <h4 class="py-2 font-bold text-xl">Contact Us Through</h4>
-                    <p><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
-                    <p><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
-                    <p><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
-                    <p class="mb-2">Pet Veterinary Clinic</p>
-                    <p class="mb-2">11901 Poblacion St.</p>
-                    <p>Cordova, Cebu 6017</p>
+                    <p class="font-bold"><i class="bi-envelope-fill text-xl"> pvcbooking@gmail.com</i></p>
+                    <p class="font-bold"><i class="bi-telephone-fill text-xl"> (+63) 967-982-2329</i></p>
+                    <p class="font-bold"><i class="bi-geo-alt-fill text-xl"> Find Us</i></p>
+                    <p class="font-bold">Pet Veterinary Clinic</p>
+                    <p class="font-bold">11901 Poblacion St.</p>
+                    <p class="font-bold">Cordova, Cebu 6017</p>
                     <div class="flex justify-center mt-3">
                         <a href="https://www.instagram.com/pvcbooking/"><button
                                 class="btn btn-sm btn-dark rounded-full mx-2"><i
@@ -1345,13 +1345,13 @@
                 <div class="text-center leading-10">
                     <h4 class="py-2 font-bold text-xl">Quick Links</h4>
                     <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
-                        href="#header">Home</a>
+                        href="#home">Home</a>
                     <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
-                        href="#content">Our Services</a>
+                        href="#services">Our Services</a>
                     <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
-                        href="#review">About Us</a>
+                        href="#about">About Us</a>
                     <a class="nav-link active block my-3 rounded-lg hover:bg-slate-300 bg-slate-200"
-                        href="#footer">Contact Us</a>
+                        href="#contact">Contact Us</a>
                 </div>
             </div>
         </div>
