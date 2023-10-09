@@ -29,4 +29,6 @@ Route::middleware([
 
     Route::resource('booking', BookingController::class);
 });
+
+Route::get('redirects', 'App\Http\Controllers\HomeController@index');
  
