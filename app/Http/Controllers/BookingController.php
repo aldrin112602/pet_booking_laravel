@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Booking;
-// use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreBookingRequest;
 use App\Http\Requests\UpdateBookingRequest;
+
 
 class BookingController extends Controller
 {
@@ -23,7 +24,8 @@ class BookingController extends Controller
      */
     public function create()
     {
-        return view('booking.create');
+        $bookings = Booking::all();
+        return view('booking.create', compact('bookings'));
     }
 
     /**
@@ -57,7 +59,7 @@ class BookingController extends Controller
     public function update(UpdateBookingRequest $request, Booking $booking)
     {
         $booking->update($request->validated());
-        return redirect()->route('task.index');
+        return redirect()->route('booking.index');
     }
 
     /**

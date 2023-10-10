@@ -2,7 +2,7 @@
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight flex items-center justify-between">
             {{ __('Booking List') }}
-            <a href="#" class="bg-slate-800 text-white px-3 text-sm rounded-md pb-2 pt-1 hover:shadow-lg hover:bg-slate-700">+ Add booking</a>
+            <a href="booking/create" class="bg-slate-800 text-white px-3 text-sm rounded-md pb-2 pt-1 hover:shadow-lg hover:bg-slate-700">+ Add booking</a>
         </h2>
     </x-slot>
 

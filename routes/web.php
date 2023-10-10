@@ -28,7 +28,19 @@ Route::middleware([
     })->name('dashboard');
 
     Route::resource('booking', BookingController::class);
+
+
+    Route::get('/booking', [BookingController::class, 'index'])->name('booking.index');
+    Route::get('/booking/create', [BookingController::class, 'create'])->name('booking.create');
+    Route::post('/booking', [BookingController::class, 'store'])->name('booking.store');
+    Route::get('/booking/{booking}', [BookingController::class, 'show'])->name('booking.show');
+    Route::get('/booking/{booking}/edit', [BookingController::class, 'edit'])->name('booking.edit');
+    Route::put('/booking/{booking}', [BookingController::class, 'update'])->name('booking.update');
+    Route::delete('/booking/{booking}', [BookingController::class, 'destroy'])->name('booking.destroy');
+
+ 
 });
 
 Route::get('redirects', 'App\Http\Controllers\HomeController@index');
- 
+
+
