@@ -30,11 +30,7 @@
                             <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">{{ $user->email }}
                             </td>
                             <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                <a href="#"
-                                    class="text-indigo-600 hover:text-indigo-900 px-3 pb-2 rounded-xl py-1 bg-indigo-200">Edit</a>
-                                <a href="#"
-                                    class="text-emerald-600 hover:text-emerald-900 px-3 pb-2 rounded-xl py-1 bg-emerald-200">Preview</a>
-                                <a href="#"
+                                <a href="javascript:void(0)" onclick="confirmDeletion({{ $user->id }})"
                                     class="text-rose-600 hover:text-rose-900 px-3 pb-2 rounded-xl py-1 bg-rose-200">Delete</a>
                             </td>
                         </tr>
@@ -43,4 +39,28 @@
             </table>
         </div>
     </div>
+
+    <script>
+        let confirmDeletion;
+        $(document).ready(function() {
+            confirmDeletion = function(id) {
+                Swal.fire({
+                    title: 'Confirm Deletion',
+                    text: 'Are you sure you want to delete this item?',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#d33',
+                    cancelButtonColor: '#3085d6',
+                    confirmButtonText: 'Yes, delete it!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire('Deleted!', 'The item has been deleted.', 'success')
+                        .then((res) => {
+                            location.href = '/redirects/users/remove/' + id;
+                        });
+                    }
+                });
+            }
+        })
+    </script>
 </x-app-layout>
