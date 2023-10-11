@@ -29,7 +29,7 @@ return new class extends Migration
             $table->date('app_date');
             $table->time('app_time');
             $table->text('comments')->nullable();
-            $table->string('status');
+            $table->string('status')->default('Pending');;
         });
     }
 

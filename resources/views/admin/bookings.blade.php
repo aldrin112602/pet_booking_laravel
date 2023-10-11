@@ -51,9 +51,9 @@
                                 <td class="px-6 py-4 whitespace-no-wrap">{{ $booking->app_time }}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">{{ $booking->status }}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">
-                                    <a href="#" class="text-indigo-600 hover:text-indigo-900 px-3 pb-2 rounded-xl py-1 bg-indigo-200">Preview</a>
-                                    <a href="#" class="text-emerald-600 hover:text-emerald-900 px-3 pb-2 rounded-xl py-1 bg-emerald-200">Approve</a>
-                                    <a href="#" class="text-rose-600 hover:text-rose-900 px-3 pb-2 rounded-xl py-1 bg-rose-200">Decline</a>
+                                    <a href="bookings/view/{{ $booking->id }}" class="text-indigo-600 hover:text-indigo-900 px-3 pb-2 rounded-xl py-1 bg-indigo-200">View</a>
+                                    <a href="bookings/approve/{{ $booking->id }}" class="text-emerald-600 hover:text-emerald-900 px-3 pb-2 rounded-xl py-1 bg-emerald-200">Approve</a>
+                                    <a href="bookings/decline/{{ $booking->id }}" class="text-rose-600 hover:text-rose-900 px-3 pb-2 rounded-xl py-1 bg-rose-200">Decline</a>
                                     <!-- Add edit link or button here -->
                                 </td>
                             </tr>
