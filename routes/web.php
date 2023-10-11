@@ -28,8 +28,6 @@ Route::middleware([
     })->name('dashboard');
 
     Route::resource('booking', BookingController::class);
-
-
     Route::get('/booking', [BookingController::class, 'index'])->name('booking.index');
     Route::get('/booking/create', [BookingController::class, 'create'])->name('booking.create');
     Route::post('/booking', [BookingController::class, 'store'])->name('booking.store');

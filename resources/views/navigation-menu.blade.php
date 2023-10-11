@@ -13,7 +13,7 @@
                 <!-- Navigation Links -->
                 @if (Auth::user()->role == '1')
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                        <x-nav-link href="">
+                        <x-nav-link href="/redirects">
                             {{ __('Registered Admin') }}
                         </x-nav-link>
                         <x-nav-link href="">
@@ -21,9 +21,6 @@
                         </x-nav-link>
                         <x-nav-link href="">
                             {{ __('Booking List') }}
-                        </x-nav-link>
-                        <x-nav-link href="">
-                            {{ __('Signout') }}
                         </x-nav-link>
                     </div>
                 @else
@@ -183,20 +180,14 @@
         <!-- Navigation Links -->
         @if (Auth::user()->role == '1')
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                    {{ __('Home') }}
+                <x-responsive-nav-link href="">
+                    {{ __('Registered Admin') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('dashboard') }}#services" :active="request()->routeIs('dashboard')">
-                    {{ __('Our Services') }}
+                <x-responsive-nav-link href="">
+                    {{ __('Registered User') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('dashboard') }}#about" :active="request()->routeIs('dashboard')">
-                    {{ __('About Us') }}
-                </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('dashboard') }}#contact" :active="request()->routeIs('dashboard')">
-                    {{ __('Contact Us') }}
-                </x-responsive-nav-link>
-                <x-responsive-nav-link href="#">
-                    {{ __('My Booking') }}
+                <x-responsive-nav-link href="">
+                    {{ __('Booking List') }}
                 </x-responsive-nav-link>
             </div>
         @else
