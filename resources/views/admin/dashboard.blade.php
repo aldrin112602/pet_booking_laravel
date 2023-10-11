@@ -58,14 +58,18 @@
                     confirmButtonText: 'Yes, delete it!'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        Swal.fire('Deleted!', 'The item has been deleted.', 'success')
-                        .then((res) => {
-                            location.href = '/redirects/remove/' + id;
-                        });
+                        location.href = '/redirects/remove/' + id;
                     }
                 });
             }
         })
     </script>
+     @if (session('success'))
+        <script>
+            $(document).ready(function() {
+                Swal.fire('Success!', '{{ session('success') }}', 'success')
+            })
+        </script>
+    @endif
 
 </x-app-layout>
