@@ -16,11 +16,14 @@
                         <x-nav-link href="/redirects">
                             {{ __('Registered Admin') }}
                         </x-nav-link>
-                        <x-nav-link href="">
+                        <x-nav-link href="/redirects/users">
                             {{ __('Registered User') }}
                         </x-nav-link>
-                        <x-nav-link href="">
+                        <x-nav-link href="/redirects/bookings">
                             {{ __('Booking List') }}
+                        </x-nav-link>
+                        <x-nav-link href="/redirects/history">
+                            {{ __('Pet\'s Medical History') }}
                         </x-nav-link>
                     </div>
                 @else
@@ -188,6 +191,10 @@
                 </x-responsive-nav-link>
                 <x-responsive-nav-link href="">
                     {{ __('Booking List') }}
+                </x-responsive-nav-link>
+                
+                <x-responsive-nav-link href="">
+                    {{ __('Pet\'s Medical History') }}
                 </x-responsive-nav-link>
             </div>
         @else

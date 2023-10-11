@@ -39,6 +39,10 @@ Route::middleware([
  
 });
 
-Route::get('redirects', 'App\Http\Controllers\HomeController@index');
 
+// Admin routes
+Route::get('/redirects', 'App\Http\Controllers\HomeController@index');
+Route::get('/redirects/users', 'App\Http\Controllers\HomeController@registeredUser');
+Route::get('/redirects/bookings', 'App\Http\Controllers\HomeController@bookingList');
+Route::get('/redirects/history', 'App\Http\Controllers\HomeController@petsMedicalHistory');
 
