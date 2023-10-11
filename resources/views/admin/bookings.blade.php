@@ -35,7 +35,9 @@
                             <th
                                 class="px-6 py-3 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                                 App Status</th>
-                            <th class="px-6 py-3 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                            <th
+                                class="px-6 py-3 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,10 +53,12 @@
                                 <td class="px-6 py-4 whitespace-no-wrap">{{ $booking->app_time }}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">{{ $booking->status }}</td>
                                 <td class="px-6 py-4 whitespace-no-wrap">
-                                    <a href="bookings/view/{{ $booking->id }}" class="text-indigo-600 hover:text-indigo-900 px-3 pb-2 rounded-xl py-1 bg-indigo-200">View</a>
-                                    <a href="bookings/approve/{{ $booking->id }}" class="text-emerald-600 hover:text-emerald-900 px-3 pb-2 rounded-xl py-1 bg-emerald-200">Approve</a>
-                                    <a href="bookings/decline/{{ $booking->id }}" class="text-rose-600 hover:text-rose-900 px-3 pb-2 rounded-xl py-1 bg-rose-200">Decline</a>
-                                    <!-- Add edit link or button here -->
+                                    <a href="bookings/view/{{ $booking->id }}"
+                                        class="text-indigo-600 hover:text-indigo-900 px-3 pb-2 rounded-xl py-1 bg-indigo-200">View</a>
+                                    <a href="bookings/approve/{{ $booking->id }}"
+                                        class="text-emerald-600 hover:text-emerald-900 px-3 pb-2 rounded-xl py-1 bg-emerald-200">Approve</a>
+                                    <a href="bookings/decline/{{ $booking->id }}"
+                                        class="text-rose-600 hover:text-rose-900 px-3 pb-2 rounded-xl py-1 bg-rose-200">Decline</a>
                                 </td>
                             </tr>
                         @endforeach
@@ -63,4 +67,11 @@
             </div>
         </div>
     </div>
+    @if (session('success'))
+        <script>
+            $(document).ready(function() {
+                Swal.fire('Success!', '{{ session('success') }}', 'success')
+            })
+        </script>
+    @endif
 </x-app-layout>

@@ -72,12 +72,17 @@ class BookingController extends Controller {
 
     public function approve( Request $request, $id = null ) {
         if ( $id ) {
-            Booking::destroy( $id );
+            Booking::where('id', $id)->update(['status' => 'Approved']);
             return redirect( 'redirects/bookings' )->with( 'success', 'Item approved successfully' );
         }
+        return redirect( 'redirects/bookings' );
     }
 
     public function decline( Request $request, $id = null ) {
-
+        if ( $id ) {
+            Booking::where('id', $id)->update(['status' => 'Pending']);
+            return redirect( 'redirects/bookings' )->with( 'success', 'Item declined successfully' );
+        }
+        return redirect( 'redirects/bookings' );
     }
 }
