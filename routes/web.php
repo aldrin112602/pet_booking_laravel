@@ -46,11 +46,14 @@ Route::get('/redirects/remove/{id}', 'App\Http\Controllers\HomeController@index'
 
 Route::get('/redirects/users', 'App\Http\Controllers\HomeController@registeredUser');
 Route::get('/redirects/users/remove/{id}', 'App\Http\Controllers\HomeController@registeredUser');
-
 Route::get('/redirects/bookings', 'App\Http\Controllers\HomeController@bookingList');
+
+
+
 Route::get('/redirects/bookings/approve/{id}', 'App\Http\Controllers\BookingController@approve');
 Route::get('/redirects/bookings/decline/{id}', 'App\Http\Controllers\BookingController@decline');
 
 Route::get('/redirects/history', 'App\Http\Controllers\HomeController@petsMedicalHistory');
+Route::get('/redirects/history/view/{id}', 'App\Http\Controllers\HomeController@viewMedicalHistory');
 
  

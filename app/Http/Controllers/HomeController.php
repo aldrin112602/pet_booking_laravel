@@ -59,10 +59,23 @@ class HomeController extends Controller {
 
     public function petsMedicalHistory() {
         $role = Auth::user()->role;
-
+        $bookings = Booking::all();
         if ( $role == '1' ) {
             // admin
-            return view( 'admin.pet-medical-history' );
+            return view( 'admin.pet-medical-history', compact( 'bookings' ) );
+        } else {
+            // user
+            return view( 'dashboard' );
+        }
+    }
+
+
+    public function viewMedicalHistory(Request $request, $id = null) {
+        $role = Auth::user()->role;
+        $bookings = Booking::all();
+        if ( $role == '1' ) {
+            // admin
+            return view( 'admin.view-medical-history', compact( 'bookings' ) );
         } else {
             // user
             return view( 'dashboard' );
